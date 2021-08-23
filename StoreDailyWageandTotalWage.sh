@@ -20,7 +20,7 @@ do
 		employeeHrs=0
 	fi
 	
-	dailyWage=$(($salary+($employeeHrs*$empWagePerHrs)))
+	dailyWage=$(($dailyWage+($employeeHrs*$empWagePerHrs)))
 	totalWage=$(($dailyWage*$empWagePerHrs))
 done
 echo "Employee Daily Wages: " $dailyWage
